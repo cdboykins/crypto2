@@ -1,8 +1,12 @@
-<h1>look up form page<h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Look Up Form</h3>
+  </div>
+  <div class="panel-body">
 </br>
 <%= form_tag home_lookupform_path, :method => 'POST' do %>
-<%= text_field_tag 'sym', nil, placeholder: 'Enter Crypto Symbol', size: 30 %>
-<%= submit_tag 'Look up Stock quote' %>
+<%= text_field_tag 'sym', nil, placeholder: 'Enter Crypto Symbol', size: 30 ,class: "form-control"  %>
+<%= submit_tag 'Look up Stock quote', class:"btn btn-primary" %>
 
 <% end%>
 </br>
@@ -15,5 +19,6 @@
         <% end %>
     <% end %>
 <% end%>
-
+</div>
+</div> 
 
