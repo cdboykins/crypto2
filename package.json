@@ -1,0 +1,7 @@
+{
+  "name": "cryptocurrency",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}
