@@ -2694,3 +2694,44 @@ Migrating to DeviseCreateUsers (20190521212140)
   ↳ /Users/carlosboykins/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/carlosboykins/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Started GET "/home/lookupform" for ::1 at 2019-05-22 06:43:21 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/carlosboykins/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#lookupform as HTML
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (2.2ms)
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 812ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/lookupform" for ::1 at 2019-05-22 06:43:29 -0400
+Processing by HomeController#lookupform as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p6f0c8NgJ1MV/qMoH0feiksD8/5AtgHvPcxasuvZcrIRjMWBVyj5qW/3t9OUjKvkdy/R96fsR/6irr3fppLfjg==", "sym"=>"btc", "commit"=>"Look up Stock quote"}
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (0.7ms)
+  Rendered home/_navbar.html.erb (0.8ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/lookupform" for ::1 at 2019-05-22 06:43:36 -0400
+Processing by HomeController#lookupform as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"woFTgHOpxexn/QFTBG3A4uNyYI/MzI9qtzw613xEa4d0qmJy5+EbFh30FaiPprWM315ChiuWyXsoXt26MQ/Guw==", "sym"=>"dddd", "commit"=>"Look up Stock quote"}
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (0.8ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_flash.html.erb (0.2ms)
+Completed 200 OK in 122ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/lookupform" for ::1 at 2019-05-22 06:43:40 -0400
+Processing by HomeController#lookupform as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MKBfwlcnFvXKDh0V8QLAKF57RDfdnIduA9ZGCt5vAESGi24ww2/ID7AHCe56ybVGYldmPjrGwX+ctKFnkySteA==", "sym"=>"", "commit"=>"Look up Stock quote"}
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (0.7ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
