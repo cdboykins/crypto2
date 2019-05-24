@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Cryptos</h1>
 
@@ -7,9 +7,17 @@
   <thead>
     <tr>
       <th>name</th>
-      <th>Symbol</th>
-      <th>Cost per</th>
+      <th>Current Price</th>
+      <th>Rank</th>
+      <th>1 Hr Change</th>
+      <th>24 Hr Change</th>
+      <th>7 Day Change</th>
+      <th>Current Value</th>
+      <th>Total Paid</th>
+      <th>Profit/Loss</th>
+      <th>Cost Paid Per</th>
       <th>Amount owned</th>
+      <th>remove</th>
     </tr>
   </thead>
 
@@ -23,17 +31,29 @@
              <% for x in @lookupform_crypto %>
                 <% if crypto.symbol == x["symbol"]  %>
                 <td><%= link_to  x["name"], crypto %></td>
+                <td>$<%= x["price_usd"].to_d %></td>
+                <td><%= x["rank"].to_d %></td>
+                <td><%=x["percent_change_1h"]%>%</td>
+                <td><%=x["percent_change_24h"]%>%</td>
+                <td><%=x["percent_change_7d"]%>%</td>
+                <td>$<%=  x["price_usd"].to_i * crypto.amount_owned %></td>
+                <td>$<%=  crypto.amount_owned * crypto.cost_per %>
+                <td>$<%=  (x["price_usd"].to_d * crypto.amount_owned) - (crypto.cost_per * crypto.amount_owned) %></td>
+                <% @profit_loss += (x["price_usd"].to_i * crypto.amount_owned) - (crypto.cost_per * crypto.amount_owned) %>
+             
               <% end %>
             <% end %>
-                <td><%= crypto.symbol %></td>
-                <td><%= crypto.cost_per %></td>
+               
+                <td>$<%= link_to crypto.cost_per, crypto %></td>
                 <td><%= crypto.amount_owned %></td>
             </tr>
       <% end %>
     <% end %>
   </tbody>
 </table>
+</br>
 
-<br>
-
+<strong>Portfolio Profit/Loss: </strong><%= number_to_currency(@profit_loss) %>
+</br>
+</br>
 <%= link_to 'New Crypto', new_crypto_path, class: "btn btn-default" %>

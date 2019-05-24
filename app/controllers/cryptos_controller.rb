@@ -12,6 +12,7 @@ class CryptosController < ApplicationController
     @uri = URI(@url)
     @response = Net::HTTP.get(@uri)
     @lookupform_crypto = JSON.parse(@response)
+    @profit_loss = 0
   end
 
   # GET /cryptos/1
