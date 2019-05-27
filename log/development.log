@@ -12998,3 +12998,127 @@ Started GET "/" for ::1 at 2019-05-27 12:52:53 -0400
 SyntaxError (/Users/carlosboykins/Desktop/ruby/crypto2/app/controllers/home_controller.rb:34: syntax error, unexpected end, expecting end-of-input):
   
 app/controllers/home_controller.rb:34: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-27 12:54:42 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:21
+  Rendered home/_navbar.html.erb (10.0ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 423ms (Views: 273.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-27 12:54:46 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:21
+  Rendered home/_navbar.html.erb (1.7ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 149ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/about" for ::1 at 2019-05-27 12:54:48 -0400
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:21
+  Rendered home/_navbar.html.erb (1.5ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cryptos" for ::1 at 2019-05-27 12:54:50 -0400
+Processing by CryptosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/carlosboykins/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering cryptos/index.html.erb within layouts/application
+  [1m[36mCrypto Load (1.0ms)[0m  [1m[34mSELECT "cryptos".* FROM "cryptos"[0m
+  ↳ app/views/cryptos/index.html.erb:25
+  Rendered cryptos/index.html.erb within layouts/application (21.4ms)
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered home/_flash.html.erb (0.2ms)
+Completed 200 OK in 166ms (Views: 61.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/cryptos/new" for ::1 at 2019-05-27 12:54:55 -0400
+Processing by CryptosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/carlosboykins/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering cryptos/new.html.erb within layouts/application
+  Rendered cryptos/_form.html.erb (10.2ms)
+  Rendered cryptos/new.html.erb within layouts/application (12.2ms)
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cryptos" for ::1 at 2019-05-27 12:54:58 -0400
+Processing by CryptosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/carlosboykins/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering cryptos/index.html.erb within layouts/application
+  [1m[36mCrypto Load (0.1ms)[0m  [1m[34mSELECT "cryptos".* FROM "cryptos"[0m
+  ↳ app/views/cryptos/index.html.erb:25
+  Rendered cryptos/index.html.erb within layouts/application (2.2ms)
+  Rendered home/_navbar.html.erb (0.6ms)
+  Rendered home/_flash.html.erb (0.2ms)
+Completed 200 OK in 143ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cryptos/new" for ::1 at 2019-05-27 12:55:01 -0400
+Processing by CryptosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/carlosboykins/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering cryptos/new.html.erb within layouts/application
+  Rendered cryptos/_form.html.erb (3.3ms)
+  Rendered cryptos/new.html.erb within layouts/application (4.5ms)
+  Rendered home/_navbar.html.erb (0.7ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home/lookupform" for ::1 at 2019-05-27 12:55:03 -0400
+Processing by HomeController#lookupform as HTML
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:21
+  Rendered home/_navbar.html.erb (1.4ms)
+  Rendered home/_flash.html.erb (0.2ms)
+Completed 200 OK in 157ms (Views: 43.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home/lookupform" for ::1 at 2019-05-27 12:55:36 -0400
+Processing by HomeController#lookupform as HTML
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:30:in `lookupform'
+Started GET "/home/lookupform" for ::1 at 2019-05-27 12:57:22 -0400
+Processing by HomeController#lookupform as HTML
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/home_controller.rb:30:in `[]'
+app/controllers/home_controller.rb:30:in `lookupform'
+Started GET "/home/lookupform" for ::1 at 2019-05-27 13:41:36 -0400
+Processing by HomeController#lookupform as HTML
+  Rendering home/lookupform.html.erb within layouts/application
+  Rendered home/lookupform.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:21
+  Rendered home/_navbar.html.erb (8.3ms)
+  Rendered home/_flash.html.erb (0.3ms)
+Completed 200 OK in 557ms (Views: 81.9ms | ActiveRecord: 1.0ms)
+
+
