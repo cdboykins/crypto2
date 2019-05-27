@@ -26,9 +26,10 @@ class HomeController < ApplicationController
   if @symbol == ""
     @symbol = "you did not enter a currency"
   end
-  # if @symbol != @lookupform_coin
+  
+  # if @symbol != @symbol["name"]
   #   @symbol = "Incorrect symbols entered"
-  # end
+  end
 end
 end
 
